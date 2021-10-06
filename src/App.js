@@ -9,7 +9,7 @@ import MovieDetail from './components/MovieDetail/MovieDetail';
 function App() {
     return (
         <div className='App'>
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Header />
                 <div className='container'>
                     <Switch>
